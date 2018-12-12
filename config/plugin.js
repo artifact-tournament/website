@@ -8,7 +8,7 @@ exports.mongoose = {
 };
 
 exports.ejs = {
-    enable: true,
+    enabled: true,
     package: 'egg-view-ejs',
 };
 
@@ -22,3 +22,7 @@ exports.passportSteam = {
     package: 'egg-passport-steam',
 };
 
+exports.passportLocal = {
+    enabled: true,
+    package: 'egg-passport-local',
+};

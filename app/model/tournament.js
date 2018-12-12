@@ -2,7 +2,7 @@
 
 module.exports = app => {
   const mongoose = app.mongoose;
-  const UserSchema = new mongoose.Schema({
+  const TournamentSchema = new mongoose.Schema({
     steamid: { type: String, unique: true, required: true },
     nickname: String,
     profileurl: String,
@@ -10,6 +10,5 @@ module.exports = app => {
     uid: String,
     seq: { type: Number, unique: true },
   }, { versionKey: false });
-
-  return mongoose.model('User', UserSchema);
+  return mongoose.model('Tournament', TournamentSchema);
 }
